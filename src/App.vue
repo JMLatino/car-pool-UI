@@ -1,26 +1,36 @@
 <template>
 	<div class="pooling">
 		<navbar></navbar>
+
+			<b-list-group-item style="background-color: #23485e;">
+				<img width="50" class="mr-2" src="./assets/tony.jpeg" style="  border-radius: 30%!important;">
+				<span style="font-size: 25px; color: white" >
+					Welcome mr. Stark
+				</span> <b-badge pill class="float-right mt-2 py-2" style="font-size: 30px!important;" variant="info">94</b-badge>
+			</b-list-group-item>
+
+
 		<div class="ui-view">
-			<router-view></router-view>
+			<router-view ></router-view>
 		</div>
 	</div>
 </template>
 
 <script src="./app.js"></script>
 <style scoped>
-	.pooling {
-		background-image: url('../src/assets/map1.webp');
-		/* background-size: cover; */
-		background-repeat: no-repeat; 
-		background-size: 3000px 1200px;
-		height: 100%;
-		width: 100%;
-		/*position: fixed*/
-		position: absolute;
-		overflow-x: scroll;
-	}
-	.ui-view {
-		margin-top:1%;
-	}
+.pooling {
+	background-image: url('../src/assets/map1.webp');
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	background-size: 3000px 1200px;
+	height: 100%;
+	width: 100%;
+	/*position: fixed*/
+	position: absolute;
+	overflow-x: scroll;
+}
+
+.ui-view {
+	margin-top: 1%;
+}
 </style>
