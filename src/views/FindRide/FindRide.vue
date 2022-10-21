@@ -7,7 +7,10 @@
             <b-col cols="5">
                 <b-card class ="card">
                     <b-row>
-                        Pick Up : <b-input v-model="pickUp"></b-input>
+                        Pick Up :
+                         <b-input v-model="pickUp"
+                         placeholder="Enter your pick up point"
+                         ></b-input>
                     </b-row>
                     <b-row>
                         Destination : <vue-google-autocomplete
@@ -20,7 +23,10 @@
                                 </vue-google-autocomplete>
                     </b-row>
                     <b-row>
-                        Seats Required : <b-form-input id="number" type="number" v-model="requestedSeats"></b-form-input>
+                        Seats Required : <b-form-input 
+                        id="number" type="number" v-model="requestedSeats"
+                        placeholder="Enter your required seats"
+                        ></b-form-input>
                     </b-row>
                     <b-row>
                         Date : <b-form-input id="time" v-model="dateSelected" type="date"></b-form-input>
