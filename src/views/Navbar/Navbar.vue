@@ -1,7 +1,9 @@
 <template>
-<div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-        <b-navbar-brand :to="{path: '/'}">Peer Drive</b-navbar-brand>
+<div class="navbar-container">
+    <b-navbar toggleable="lg" type="dark">
+        <img width="75" class="mr-2" src="../../assets/car.svg">
+        <b-navbar-brand :to="{path: '/'}">Toot Toot</b-navbar-brand>
+
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -33,7 +35,7 @@
 
 <style scoped>
 .navbar-container {
-    margin-top: 3%;
+    background-color: #0d7faf!important;
 }
 b-nav-item {
     font-size: 12px bold;

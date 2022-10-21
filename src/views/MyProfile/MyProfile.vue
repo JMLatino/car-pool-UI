@@ -70,7 +70,7 @@
 <script src="./my-profile.js"></script>
 <style scoped>
     .card {
-        background-color: #5cb8c9 !important;
+        background-color: #0d7faf !important;
         opacity: 0.95;
         padding: 25px;
     }

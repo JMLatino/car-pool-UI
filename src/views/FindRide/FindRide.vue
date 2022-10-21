@@ -40,7 +40,7 @@
 <style scoped>
 .card {
     opacity:0.95;
-    background-color:#5cb8c9 !important;
+    background-color:#0d7faf !important;
     padding: 25px;
 }
 </style>

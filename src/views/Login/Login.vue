@@ -32,13 +32,13 @@
 
 <style scoped>
 .login {
-    background-color: #5cb8c9 !important;
+    background-color: #0d7faf!important;
     opacity: 0.8;
     padding: 25px;
 }
 
 .card {
-    background-color: #5cb8c9 !important;
+    background-color: #0d7faf!important;
     ;
     opacity: 0.8;
     padding: 25px;
