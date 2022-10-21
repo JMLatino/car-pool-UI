@@ -4,7 +4,7 @@
             <h2>Find a Ride</h2>
         </b-row>
         <b-row align-h="center">
-            <b-col cols="5">
+            <b-col>
                 <b-card class ="card">
                     <b-row>
                         Pick Up :

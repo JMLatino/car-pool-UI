@@ -4,7 +4,7 @@
             <b-button type="submit" variant="info" :to="{path: '/offer-ride/add-car'}">Register Your Vehicle</b-button>
         </b-row>
         <b-row align-h="center">
-            <b-col cols="6">
+            <b-col>
                 <b-row align-h="center">
                     <h2 style="color: white!important;">Offer Ride</h2>
                 </b-row>
