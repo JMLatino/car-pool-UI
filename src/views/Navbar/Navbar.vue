@@ -8,7 +8,7 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <b-nav-item :to="{path: '/offer-ride'}" @click="callVehicles">Offer Ride</b-nav-item>
+                <b-nav-item :to="{path: '/offer-ride'}" @click="callVehicles" style="color: white!important;">Offer Ride</b-nav-item>
                 <b-nav-item :to="{path: '/find-ride'}">Find Ride</b-nav-item>
                  <b-nav-item-dropdown v-if="userName" text="My Rides" right>
                     <b-dropdown-item :to="{path: '/my-ride/history'}" @click="callHistory">History</b-dropdown-item>

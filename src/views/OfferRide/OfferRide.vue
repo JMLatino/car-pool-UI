@@ -6,7 +6,7 @@
         <b-row align-h="center">
             <b-col cols="6">
                 <b-row align-h="center">
-                    <h2>Offer Ride</h2>
+                    <h2 style="color: white!important;">Offer Ride</h2>
                 </b-row>
                 <b-card class="card">
                     <b-row>
