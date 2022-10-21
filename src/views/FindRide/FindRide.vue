@@ -5,28 +5,19 @@
         </b-row>
         <b-row align-h="center">
             <b-col>
-                <b-card class ="card">
+                <b-card class="card">
                     <b-row>
                         Pick Up :
-                         <b-input v-model="pickUp"
-                         placeholder="Enter your pick up point"
-                         ></b-input>
+                        <b-input v-model="pickUp" placeholder="Enter your pick up point"></b-input>
                     </b-row>
                     <b-row>
-                        Destination : <vue-google-autocomplete
-                                    id="to_location"
-                                    :country="['in']"
-                                    classname="form-control"
-                                    placeholder="Enter your Destination"
-                                    v-on:placechanged="toAddress"
-                                >
-                                </vue-google-autocomplete>
+                        Destination :
+                        <b-input v-model="destination" placeholder="Enter your Destination" v-on:placechanged="toAddress"
+                            id="to_location" :country="['in']" classname="form-control"></b-input>
                     </b-row>
                     <b-row>
-                        Seats Required : <b-form-input 
-                        id="number" type="number" v-model="requestedSeats"
-                        placeholder="Enter your required seats"
-                        ></b-form-input>
+                        Seats Required : <b-form-input id="number" type="number" v-model="requestedSeats"
+                            placeholder="Enter your required seats"></b-form-input>
                     </b-row>
                     <b-row>
                         Date : <b-form-input id="time" v-model="dateSelected" type="date"></b-form-input>
@@ -45,8 +36,8 @@
 <script src="./find-ride.js"></script>
 <style scoped>
 .card {
-    opacity:0.95;
-    background-color:#0d7faf !important;
+    opacity: 0.95;
+    background-color: #0d7faf !important;
     padding: 25px;
 }
 </style>
