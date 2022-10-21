@@ -78,7 +78,7 @@ export default new Vuex.Store({
 	},
 	actions: {
 		getSignUp({ commit }, { payload, success }) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/users/signup"
+			let path = "http://10.123.52.198:8080/api/users/signup"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setUserId', response.data.responseContent.userId)
@@ -91,7 +91,7 @@ export default new Vuex.Store({
 		},
 
 		signIn({ commit }, { payload, success }) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/users/login"
+			let path = "http://10.123.52.198:8080/api/users/login"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setUserName', response.data.responseContent.username)
@@ -105,7 +105,7 @@ export default new Vuex.Store({
 		},
 
 		myProfile({ commit }, payload) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/users/" + payload
+			let path = "http://10.123.52.198:8080/api/users/" + payload
 			axios.get(path)
 				.then(function (response) {
 					commit('setUserDetails', response.data.responseContent)
@@ -117,7 +117,7 @@ export default new Vuex.Store({
 		},
 
 		callHistory({ commit }, payload) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/myrides/history"
+			let path = "http://10.123.52.198:8080/api/myrides/history"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setHistoryDetails', response.data.responseContent)
@@ -128,7 +128,7 @@ export default new Vuex.Store({
 		},
 
 		callUpcoming({ commit }, payload) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/myrides/upcoming"
+			let path = "http://10.123.52.198:8080/api/myrides/upcoming"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setUpcomingDetails', response.data.responseContent)
@@ -139,7 +139,7 @@ export default new Vuex.Store({
 		},
 
 		vehicleRegistration({ commit }, { payload, success }) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/vehicles/register"
+			let path = "http://10.123.52.198:8080/api/vehicles/register"
 			axios.post(path, payload)
 				.then(function (response) {
 					alert('success')
@@ -152,7 +152,7 @@ export default new Vuex.Store({
 		},
 
 		getVehicleList({ commit }, payload) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/vehicles/" + payload
+			let path = "http://10.123.52.198:8080/api/vehicles/" + payload
 			axios.get(path)
 				.then(function (response) {
 					commit('setVehicles', response.data.responseContent)
@@ -163,7 +163,7 @@ export default new Vuex.Store({
 		},
 
 		createTrip({ commit }, { payload, success }) {
-			let path = 'https://corporate-car-pool.herokuapp.com/api/ride/create-trip'
+			let path = 'http://10.123.52.198:8080/api/ride/create-trip'
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setOfferRide', response.success)
@@ -176,7 +176,7 @@ export default new Vuex.Store({
 		},
 
 		findRide({ commit }, { payload, success }) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/rides/find-ride"
+			let path = "http://10.123.52.198:8080/api/rides/find-ride"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setRideList', response.data.responseContent)
@@ -188,7 +188,7 @@ export default new Vuex.Store({
 		},
 
 		joinRide({ commit, dispatch }, { payload, success }) {
-			let path = "https://corporate-car-pool.herokuapp.com/api/rides/join-trip"
+			let path = "http://10.123.52.198:8080/api/rides/join-trip"
 			axios.post(path, payload)
 				.then(function (response) {
 					commit('setJoinStatus', response.data.responseContent)

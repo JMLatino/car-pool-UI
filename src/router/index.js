@@ -10,7 +10,7 @@ import RideList from '@/views/RideListing/RideList.vue'
 import MyRide from '@/views/MyRide/MyRide.vue'
 import MyProfile from '@/views/MyProfile/MyProfile.vue'
 import History from '@/views/History/History.vue'
-
+import Intro from '@/views/Intro/Intro.vue'
 
 Vue.use(Router)
 
@@ -18,6 +18,11 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: '/intro',
+      name: 'Intro',
+      component: Intro
+    },
     {
       path: '/login',
       name: 'Login',
