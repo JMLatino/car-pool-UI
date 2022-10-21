@@ -1,5 +1,6 @@
 <template>
-    <b-container style="color: white;">
+
+    <b-container style="color: white;" class="mt-5">
         <b-row align-h="center">
             <h2>Find a Ride</h2>
         </b-row>
@@ -12,8 +13,9 @@
                     </b-row>
                     <b-row>
                         Destination :
-                        <b-input v-model="destination" placeholder="Enter your Destination" v-on:placechanged="toAddress"
-                            id="to_location" :country="['in']" classname="form-control"></b-input>
+                        <b-input v-model="destination" placeholder="Enter your Destination"
+                            v-on:placechanged="toAddress" id="to_location" :country="['in']" classname="form-control">
+                        </b-input>
                     </b-row>
                     <b-row>
                         Seats Required : <b-form-input id="number" type="number" v-model="requestedSeats"

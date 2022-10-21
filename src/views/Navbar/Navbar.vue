@@ -4,8 +4,6 @@
         <img width="75" class="mr-2" src="../../assets/car.svg" style=" -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
   filter: invert(100%);">
         <b-navbar-brand :to="{path: '/'}">Toot Toot</b-navbar-brand>
-
-
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
