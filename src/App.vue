@@ -10,9 +10,10 @@
 <script src="./app.js"></script>
 <style scoped>
 	.pooling {
-		background-image: url('../src/assets/map1.jpg');
+		background-image: url('../src/assets/map1.webp');
 		/* background-size: cover; */
 		background-repeat: no-repeat; 
+		background-size: 3000px 1200px;
 		height: 100%;
 		width: 100%;
 		/*position: fixed*/
