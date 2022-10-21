@@ -1,7 +1,8 @@
 <template>
 <div class="navbar-container">
     <b-navbar toggleable="lg" type="dark">
-        <img width="75" class="mr-2" src="../../assets/car.svg">
+        <img width="75" class="mr-2" src="../../assets/car.svg" style=" -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+  filter: invert(100%);">
         <b-navbar-brand :to="{path: '/'}">Toot Toot</b-navbar-brand>
 
 
