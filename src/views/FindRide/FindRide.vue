@@ -1,5 +1,5 @@
 <template>
-    <b-container>
+    <b-container style="color: white;">
         <b-row align-h="center">
             <h2>Find a Ride</h2>
         </b-row>

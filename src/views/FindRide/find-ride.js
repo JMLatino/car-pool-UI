@@ -7,7 +7,7 @@ export default {
 			selected: '',
 			to_address: '',
 			from_address: '',
-			pickUp: 'Coviam Technologies',
+			pickUp: 'Cap',
 			placeResultData: {},
 			requestedSeats: '',
 			id: '',
