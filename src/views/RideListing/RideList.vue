@@ -3,6 +3,17 @@
     <div>
       <h2 style="color=white">Drivers</h2>
       <b-list-group>
+        <b-list-group-item class="d-flex align-items-center" >
+          <b-avatar class="mr-3"></b-avatar>
+          <span class="mr-auto">date</span>
+          <span class="mr-auto">from</span>
+          <span class="mr-auto">to</span>
+          <span class="mr-auto">status</span>
+          <span class="mr-auto">seats</span>
+          <b-badge></b-badge>
+        </b-list-group-item>
+      </b-list-group>
+      <b-list-group>
         <b-list-group-item class="d-flex align-items-center" v-for="trip in list.Items" :key="trip.driverId">
           <b-avatar class="mr-3"></b-avatar>
           <span class="mr-auto">{{trip.date}}</span>
