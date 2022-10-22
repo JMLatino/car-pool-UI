@@ -175,7 +175,7 @@ export default new Vuex.Store({
 				})
 		},
 
-		findRide({ commit }, { payload, success }) {
+		findRide({ commit }, {  success }) {
 			let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
 			axios.get(path)
 				.then(function (response) {
