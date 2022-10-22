@@ -1,6 +1,6 @@
 import VueGoogleAutocomplete from 'vue-google-autocomplete'
 import { mapGetters } from 'vuex'
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
 	data() {
@@ -57,8 +57,9 @@ export default {
 			// 	}
 			// }
 
-			axios.get('https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips')
-			.then(response => {window.ajs = response})
+			// axios.get('https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips')
+			// .then(response => {window.ajs = response})
+			this.callRideList()
 			// this.$store.dispatch('findRide',{success: this.callRideList})
 		},
 		callRideList() {

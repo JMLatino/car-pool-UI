@@ -14,7 +14,7 @@
         <b-badge>12</b-badge>
       </b-list-group-item>
       <b-list-group-item class="d-flex align-items-center">
-        <b-avatar variant="info" src="https://placekitten.com/300/300" class="mr-3"></b-avatar>
+        <b-avatar variant="info" src="/img/tony.0a4d2d70.jpeg" class="mr-3"></b-avatar>
         <span class="mr-auto">Credits to earn</span>
         <b-badge>9</b-badge>
       </b-list-group-item>

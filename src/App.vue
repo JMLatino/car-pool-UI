@@ -2,16 +2,13 @@
 	<div class="pooling">
 		<navbar></navbar>
 
-			<b-list-group-item style="background-color: #23485e;">
-				<img width="50" class="mr-2" src="./assets/tony.jpeg" style="  border-radius: 30%!important;">
-				<span style="font-size: 20px; color: white" >
-					Welcome mr. Stark
-				</span> <b-badge pill class="float-right mt-2 py-2" style="font-size: 20px!important;" variant="info">95</b-badge>
-			</b-list-group-item>
-
-
+		<b-list-group-item class="d-flex align-items-center" style="background-color: #23485e;">
+			<b-avatar variant="info" size="5rem" src="/img/tony.0a4d2d70.jpeg" class="mr-3"></b-avatar>
+			<span class="mr-auto" style="font-size: 20px; color: white">Welcome mr. Stark</span>
+			<b-badge pill variant="info" class="float-right mt-2 py-2" style="font-size: 20px!important;">95</b-badge>
+		</b-list-group-item>
 		<div class="ui-view">
-			<router-view ></router-view>
+			<router-view></router-view>
 		</div>
 	</div>
 </template>
