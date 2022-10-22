@@ -35,30 +35,31 @@ export default {
         this.placeId = placeResultData.place_id
     },
     offerRide() {
-        let datetime = this.dateSelected + ',' + this.time
-        let date = new Date(datetime)
-        let pAddress = ''
-        let payload = {
-            "userId": this.userId,
-            "requestContent" : {
-                    "pickupPoint": {
-                        "latitude": this.orgLatitude,
-                        "longitude": this.orgLongitude,
-                        "placeId": this.orgPlaceID,
-                        "placeAddress": pAddress
-                    },
-                    "destinationPoint":{
-                        "latitude": this.latitude,
-                        "longitude": this.longitude,
-                        "placeId": this.placeId,
-                        "placeAddress": pAddress
-                    },
-                    "tripStartTime": date,
-                    "offeredSeats": this.availableSeats,
-                    "vehicleNumber" : this.selectedVehicle
-                }
-            }
-            this.$store.dispatch('createTrip', {payload,success: this.callFind})
+        // let datetime = this.dateSelected + ',' + this.time
+        // let date = new Date(datetime)
+        // let pAddress = ''
+        // let payload = {
+        //     "userId": this.userId,
+        //     "requestContent" : {
+        //             "pickupPoint": {
+        //                 "latitude": this.orgLatitude,
+        //                 "longitude": this.orgLongitude,
+        //                 "placeId": this.orgPlaceID,
+        //                 "placeAddress": pAddress
+        //             },
+        //             "destinationPoint":{
+        //                 "latitude": this.latitude,
+        //                 "longitude": this.longitude,
+        //                 "placeId": this.placeId,
+        //                 "placeAddress": pAddress
+        //             },
+        //             "tripStartTime": date,
+        //             "offeredSeats": this.availableSeats,
+        //             "vehicleNumber" : this.selectedVehicle
+        //         }
+        //     }
+            // this.$store.dispatch('createTrip', {payload,success: this.callFind})
+            this.$router.push({name: 'FindRideHome', path: '/'})
         },
         callFind() {
             this.$router.push({name: 'FindRideHome', path: '/'})
