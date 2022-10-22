@@ -138,28 +138,28 @@ export default new Vuex.Store({
 				})
 		},
 
-		vehicleRegistration({ commit }, { payload, success }) {
-			let path = "http://10.61.244.211:8080/api/vehicles/register"
-			axios.post(path, payload)
-				.then(function (response) {
-					alert('success')
-					commit('setRegistration', response.data.responseContent)
-					if (success) success()
-				})
-				.catch(function () {
-					alert('vehicle Registration API failure')
-				})
+		vehicleRegistration() {
+			// let path = "http://10.61.244.211:8080/api/vehicles/register"
+			// axios.post(path, payload)
+			// 	.then(function (response) {
+			// 		alert('success')
+			// 		commit('setRegistration', response.data.responseContent)
+			// 		if (success) success()
+			// 	})
+			// 	.catch(function () {
+			// 		alert('vehicle Registration API failure')
+			// 	})
 		},
 
-		getVehicleList({ commit }, payload) {
-			let path = "http://10.61.244.211:8080/api/vehicles/" + payload
-			axios.get(path)
-				.then(function (response) {
-					commit('setVehicles', response.data.responseContent)
-				})
-				.catch(function () {
-					alert('vehicle List API failure')
-				})
+		getVehicleList() {
+			// let path = "http://10.61.244.211:8080/api/vehicles/" + payload
+			// axios.get(path)
+			// 	.then(function (response) {
+			// 		commit('setVehicles', response.data.responseContent)
+			// 	})
+			// 	.catch(function () {
+			// 		alert('vehicle List API failure')
+			// 	})
 		},
 
 		createTrip({ commit }, { payload, success }) {

@@ -1,7 +1,7 @@
 <template>
     <b-container>
         <b-row align-h="center">
-            <b-col cols="5">
+            <b-col>
                 <h2> Register Your Vehicle </h2>
                 <b-card class="card">
                     <b-row>
