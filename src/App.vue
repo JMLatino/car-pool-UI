@@ -6,7 +6,7 @@
 				<img width="50" class="mr-2" src="./assets/tony.jpeg" style="  border-radius: 30%!important;">
 				<span style="font-size: 20px; color: white" >
 					Welcome mr. Stark
-				</span> <b-badge pill class="float-right mt-2 py-2" style="font-size: 20px!important;" variant="info">94</b-badge>
+				</span> <b-badge pill class="float-right mt-2 py-2" style="font-size: 20px!important;" variant="info">95</b-badge>
 			</b-list-group-item>
 
 

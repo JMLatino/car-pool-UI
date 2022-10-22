@@ -176,8 +176,8 @@ export default new Vuex.Store({
 		},
 
 		findRide({ commit }, { payload, success }) {
-			let path = "http://10.61.244.211:8080/api/rides/find-ride"
-			axios.post(path, payload)
+			let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
+			axios.get(path)
 				.then(function (response) {
 					commit('setRideList', response.data.responseContent)
 					if (success) success()

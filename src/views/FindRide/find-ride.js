@@ -59,7 +59,7 @@ export default {
 
 			axios.get('https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips')
 			.then(response => {window.ajs = response})
-			// this.$store.dispatch('findRide',{payload, success: this.callRideList})
+			this.$store.dispatch('findRide',{success: this.callRideList})
 		},
 		callRideList() {
 			this.$router.push({name: 'RideList', path: '/find-ride/ride-list'})
