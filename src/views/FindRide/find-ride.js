@@ -9,7 +9,7 @@ export default {
 			selected: '',
 			to_address: '',
 			from_address: '',
-			pickUp: 'Cap',
+			pickUp: '',
 			placeResultData: {},
 			requestedSeats: '',
 			id: '',
