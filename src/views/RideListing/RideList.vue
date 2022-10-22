@@ -1,7 +1,7 @@
 <template>
-  <b-container fluid class="p-4">
+  <b-container fluid class="px-2">
     <div>
-      <h2 style="color:white">Trips</h2>
+      <h2 style="color:white" class="mx-2">Trips</h2>
       <b-list-group>
         <div v-for="trip in list.Items" :key="trip.driverId">
 

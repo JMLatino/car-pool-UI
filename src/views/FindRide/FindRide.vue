@@ -40,6 +40,6 @@
 .card {
     opacity: 0.95;
     background-color: #0d7faf !important;
-    padding: 25px;
+
 }
 </style>
