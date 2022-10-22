@@ -28,7 +28,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   data() {
     return {
@@ -37,16 +37,16 @@ export default {
     }
   },
   mounted() {
-    let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
+    // let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
 
-    axios.get(path)
-      .then(function (response) {
-        this.list = response;
-      })
-      .catch(function (e) {
-        alert('Find Ride API failure', e)
-      })
-    // this.list = {"Items":[{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t2","to":"amsterdam","seatsAvailable":2,"driverId":"p2"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t1","to":"amsterdam","seatsAvailable":1,"driverId":"p1"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t3","to":"amsterdam","seatsAvailable":3,"driverId":"p3"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t4","to":"amsterdam","seatsAvailable":4,"driverId":"p4"}],"Count":4,"ScannedCount":4}
+    // axios.get(path)
+    //   .then(function (response) {
+    //     this.list = response;
+    //   })
+    //   .catch(function (e) {
+    //     alert('Find Ride API failure', e)
+    //   })
+    this.list = {"Items":[{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t2","to":"amsterdam","seatsAvailable":2,"driverId":"p2"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t1","to":"amsterdam","seatsAvailable":1,"driverId":"p1"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t3","to":"amsterdam","seatsAvailable":3,"driverId":"p3"},{"date":"20-11-2022","from":"utrecht","status":"open","time":1200,"id":"t4","to":"amsterdam","seatsAvailable":4,"driverId":"p4"}],"Count":4,"ScannedCount":4}
 
   },
   methods: {
