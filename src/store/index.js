@@ -175,16 +175,16 @@ export default new Vuex.Store({
 				})
 		},
 
-		findRide({ commit }, {  success }) {
-			let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
-			axios.get(path)
-				.then(function (response) {
-					commit('setRideList', response.data.responseContent)
-					if (success) success()
-				})
-				.catch(function () {
-					alert('Find Ride API failure')
-				})
+		findRide() {
+			// let path = "https://lchaj9w7t3.execute-api.eu-west-1.amazonaws.com/dev/trips"
+			// // axios.get(path)
+			// // 	.then(function (response) {
+			// // 		commit('setRideList', response.data.responseContent)
+			// // 		if (success) success()
+			// // 	})
+			// // 	.catch(function () {
+			// // 		alert('Find Ride API failure')
+			// 	})
 		},
 
 		joinRide({ commit, dispatch }, { payload, success }) {

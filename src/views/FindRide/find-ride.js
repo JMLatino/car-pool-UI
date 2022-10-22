@@ -1,6 +1,6 @@
 import VueGoogleAutocomplete from 'vue-google-autocomplete'
 import { mapGetters } from 'vuex'
-import axios from 'axios'
+
 
 export default {
 	data() {
